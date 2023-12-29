@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --orange: hsl(25, 97%, 53%);
+    --white: hsl(0, 0%, 100%);
+    --light-grey: hsl(217, 12%, 63%);
+    --medium-grey: hsl(216, 12%, 54%);
+    --dark-blue: hsl(213, 19%, 18%);
+    --black-blue: hsl(216, 12%, 8%);
+}
+
+body {
+    height: 100vh;
+    font-family: 'Overpass', sans-serif;
+    background-color: var(--black-blue);
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+}
+
+.primary-container, .thank-you-container {
+    max-width: 412px;
+    border-radius: 30px;
+    background: radial-gradient(98.96% 98.96% at 50% 0%, #232A34 0%, #181E27 100%);
+    padding: 32px 39px 32px 32px;
+    display: flex;
+    flex-direction: column;
+}
+
+.icon-container {
+    width: 48px;
+    height: 48px;
+    padding: 16px;
+    border-radius: 50px;
+    background-color: var(--dark-blue);
+    margin-bottom: 30px;
+}
+
+.icon {
+    width: 17px;
+}
+
+.main-heading {
+    color: var(--Pure-White, #FFF);
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 7px;
+}
+
+.rate-paragraph, .thank-you-paragraph {
+    color: var(--Light-Grey, #969FAD);
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 24px;
+    margin-bottom: 24px;
+}
+
+.rate-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 32px;
+}
+
+.rate-field {
+    width: 51px;
+    height: 51px;
+    padding: 14px 22px 13px 21px;
+    border-radius: 50px;
+    background-color: var(--dark-blue);
+    color: var(--medium-grey);
+    text-align: center;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+}
+
+.rate-field:hover {
+    cursor: pointer;
+    background-color: var(--orange);
+    color: var(--white);
+}
+
+.active {
+    background-color: var(--medium-grey);
+    color: var(--white);
+}
+
+.submit-btn {
+    cursor: pointer;
+    flex-shrink: 0;
+    border-radius: 22.5px;
+    background-color: var(--orange);
+    color: var(--white);
+    font-family: 'Overpass', sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    border: none;
+    padding: 11px 137px;
+}
+
+.submit-btn:hover {
+    background-color: var(--white);
+    color: var(--orange);
+    transition: .2s;
+}
+
+.submit-btn:active {
+    transform: scale(.96);
+}
+
+.thank-you-container {
+    display: none;
+    padding: 45px 40px 45px 32px;
+}
+
+.payment-img {
+    width: 162px;
+    margin-bottom: 32px;
+    align-self: center;
+}
+
+.message-container {
+    border-radius: 22.5px;
+    background-color: var(--dark-blue);  
+    padding: 4px 19px 4px 20px;
+    margin-bottom: 32px;
+    width: fit-content;
+    align-self: center;
+}
+
+.rate-message {
+    color: var(--orange);
+    text-align: center;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.thank-you-heading {
+    text-align: center;
+}
+
+.thank-you-paragraph {
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.attribution { 
+    color: var(--light-grey);
+    font-size: 11px; 
+    text-align: center; 
+}
+
+.attribution a { 
+    color: hsl(26, 60%, 68%); 
+}
+
+.attribution a:hover {
+    color: var(--orange);
+}
+
+
+@media only screen and (max-width: 375px) {
+
+    .primary-container, .thank-you-container {
+        max-width: 327px;
+        padding: 24px 22px 32px 24px;
+        border-radius: 15px;
+    }
+
+    .icon-container {
+        width: 40px;
+        height: 40px;
+        margin-bottom: 16px;
+        padding: 12px;
+    }
+
+    .main-heading {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+
+    .rate-paragraph, .thank-you-paragraph {
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+    .rate-container {
+        margin-bottom: 24px;
+    }
+
+    .rate-field {
+        width: 42px;
+        height: 42px;
+        padding: 9px 18px 9px 17px;
+        font-size: 14px;
+        line-height: 24px;
+        letter-spacing: 0.175px;
+    }
+
+    .submit-btn {
+        border-radius: 22.5px;
+        font-size: 14px;
+        letter-spacing: 1.867px;
+        padding: 12px 109px;
+    }
+
+    .thank-you-container {
+        padding: 34px 24px 37px 24px;
+    }
+
+    .payment-img {
+        width: 144px;
+        margin-bottom: 24px;
+    }
+
+    .message-container {
+        padding: 5px 12px;
+        margin-bottom: 24px;
+    }
+
+    .rate-message {
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+}

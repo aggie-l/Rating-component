@@ -42,6 +42,7 @@ Desktop: Thank you message
 
 ## Author
 
-- Frontend Mentor - https://www.frontendmentor.io/profile/aggie-l)https://www.frontendmentor.io/profile/aggie-l
+- Frontend Mentor - https://www.frontendmentor.io/profile/aggie-l
+  
 
 ** 🧙‍♂️ Thank you wizards 🧙‍♂️ **
